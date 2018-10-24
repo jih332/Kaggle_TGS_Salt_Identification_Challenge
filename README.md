@@ -18,6 +18,7 @@ Pytorch 0.4
   * Self-designed encoder/decoder: 
     * replaced every maxpool layer with an Inception module; 
     * replaced every conv block with a depthwise ResNeXt module;
+    * no dropout
   * introduced a binary classification output head after encoder, as a deep supervision(thanks to Heng's idea);
   * scSE blocks were attached after each contracting/expanding block;
 
