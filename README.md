@@ -26,7 +26,9 @@ Pytorch 0.4
   * Model were trained with an ensembled loss: LovaszHingeLoss(images with non-empty masks) + BCELoss(binaryclassification) + LovaszHingeLoss(all images) with weights (0.1, 0.1, 1.0);
   * SGD with initial lr 0.1 as the optimizer;
   * CosineAnnealing lr to 1e-5 in each cycle, 80/120/160 epochs per cycle;
-  * batch_size = 16
+  * batch_size = 16;
+  * 5 fold cross validation;
+  * snapshot from each cycle + each fold for ensemble;
 
 ## Performance
   * Public Leaderboard: 265th/3234; score: 0.8424
